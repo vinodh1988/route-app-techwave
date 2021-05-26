@@ -335,3 +335,64 @@ in Menubar component, use routerLink directive to configure the route
 <router-outlet></router-outlet>
 ```
 
+#### Angular Services and Dependency Injection
+
+Service is a broad category encompassing any value, function, or feature that an app needs. A service is typically a class with a narrow, well-defined purpose. It should do something specific and do it well.
+
+Angular distinguishes components from services to increase modularity and reusability. By separating a component's view-related functionality from other kinds of processing, you can make your component classes lean and efficient.
+
+Ideally, a component's job is to enable the user experience and nothing more. A component should present properties and methods for data binding, in order to mediate between the view (rendered by the template) and the application logic (which often includes some notion of a model).
+
+A component can delegate certain tasks to services, such as fetching data from the server, validating user input, or logging directly to the console. By defining such processing tasks in an injectable service class, you make those tasks available to any component. You can also make your app more adaptable by injecting different providers of the same kind of service, as appropriate in different circumstances.
+
+* A Component should not usually fetch data from server it should be done by service
+
+Angular doesn't enforce these principles. Angular does help you follow these principles by making it easy to factor your application logic into services and make those services available to components through dependency injection
+
+### creating a service by using ng
+
+to create a service
+
+```
+ng g s services/data
+```
+
+it would create a service as follows
+
+```
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+
+  constructor() { }
+}
+
+```
+
+#### Dependency Injection
+
+You can inject a service to your component by using the following syntax
+
+```
+@Component({
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
+})
+export class AboutComponent implements OnInit {
+ 
+  constructor(public ds:DataService) {
+    
+   }
+
+```
+
+By default angular create a singleton object for the service, in the above
+code in the constructor we have performed dependency injection and the
+access specifier applied the ds variable would make it an instance member
+
+
+
