@@ -249,3 +249,51 @@ if the url is changed in the browser the url change is tackled in the browser it
 
 #### Routing Configuration
 
+There are three fundamental building blocks to creating a route.
+
+1. Import RouterModule and Routes into your routing module.
+
+The Angular CLI performs this step automatically. The CLI also sets up a Routes array for your routes and configures the imports and exports arrays for @NgModule()
+
+```
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+
+const routes: Routes = [
+   {path:"",component: HomeComponent},
+   {path:"about",component: AboutComponent},
+   {path:"contact",component: ContactComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+```
+
+import AppRoutingModule in app.module.ts
+
+```
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+
+  ```
+
+
+
