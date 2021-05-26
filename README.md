@@ -255,6 +255,9 @@ There are three fundamental building blocks to creating a route.
 
 The Angular CLI performs this step automatically. The CLI also sets up a Routes array for your routes and configures the imports and exports arrays for @NgModule()
 
+2. Define your routes in your Routes array.
+
+Each route in this array is a JavaScript object that contains two properties. The first property, path, defines the URL path for the route. The second property, component, defines the component Angular should use for the corresponding path.
 ```
 
 import { NgModule } from '@angular/core';
@@ -296,4 +299,39 @@ import AppRoutingModule in app.module.ts
   ```
 
 
+
+3. Add your routes to your application.
+
+Now that you have defined your routes, you can add them to your application. First, add links to the two components. Assign the anchor tag that you want to add the route to the routerLink attribute. Set the value of the attribute to the component to show when a user clicks on each link. Next, update your component template to include <router-outlet>. This element informs Angular to update the application view with the component for the selected route
+
+in Menubar component, use routerLink directive to configure the route
+
+```
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" routerLink="/">ABC Limited</a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  ```
+
+  in the app component , use router-outlet
+
+  ```
+  <app-menubar></app-menubar>
+<router-outlet></router-outlet>
+```
 
