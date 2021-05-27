@@ -13,4 +13,13 @@ export class ContactService {
     
     return this.http.get("http://localhost:9090/contacts");
   }
+
+  getDetails(id:number):Observable<object>{
+    
+    return this.http.get("http://localhost:9090/details/"+id);
+  }
+
+  
+  
+  
 }
