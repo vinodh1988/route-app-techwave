@@ -1,0 +1,15 @@
+<div class="serviceitem">
+   <div class="image">
+       <img src="http://localhost:8090/{{service.image}}">
+   </div>
+   <div class="default" *ngIf="smallview" (mouseover)="handleDefault()">
+        {{service.title}}
+   </div>
+
+   <div class="fullcontent" *ngIf="!smallview" (mouseleave)="handleDefault()">
+    <h3 style="text-align: center;text-shadow: 2px 2px 2px gray;">{{service.title}}</h3>
+    <p style="font-family:'Times New Roman', Times, serif;margin: 5px;">
+        {{service.description}}
+    </p>
+</div>
+</div>

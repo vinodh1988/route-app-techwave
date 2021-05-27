@@ -1,0 +1,59 @@
+{
+	"contacts": [{
+			"title": "Corporate Branch",
+			"address": "90, IST floor , Main Road",
+			"city": "T Nagar,Chennai",
+			"pin": 600017,
+			"image": "chennai.jpg"
+		},
+		{
+			"title": "Head Quarters",
+			"address": "9023, 2nd floor , Tilak cross",
+			"city": "MG Road,Hyderabad",
+			"pin": 589034,
+			"image": "hyderabad.jpg"
+		},
+		{
+			"title": "Regional Branch",
+			"address": "43, 3rd floor , Jay Road",
+			"city": "Gandhi Nagar, Mumbai",
+			"pin": 100011,
+			"image": "mumbai.jpg"
+		}
+
+	],
+
+	"services": [{
+			"title": "Branding and Communication",
+			"description": "We help brands connect and engage by finding a unique voice in the market. From strategy and positioning to logo and graphic design to advertising campaigns, we produce identity and communications materials that build credibility, as well as sales.",
+			"image": "branding.jpg"
+		},
+		{
+			"title": "Inbound &  Content Marketing",
+			"description": "We have a team of inbound-certified content experts, writers and designers who know your market and can develop an inbound marketing strategy that will help you attract visitors to your website, convert them into leads and then into customers.",
+			"image": "inbound.png"
+		},
+		{
+			"title": "Film &  Webinar",
+			"description": "Our talent pool includes musicians, song writers and video technicians who can create unique soundtracks for your corporate films or put together a YouTube video that showcases your products or company. We also help you create, host and promote webinars and podcasts or live streaming programs.",
+			"image": "films.png"
+		},
+		{
+			"title": "Digital Marketing",
+			"description": "WE can help tie your online and offline branding together with digital and social media services, pay per click (PPC), SEO/SEM or Google Adwords.  At UP we work with all social media networks, and can help you with both your paid activities and organic presence. ",
+			"image": "digital.png"
+		},
+		{
+			"title": "ECommerce & Websites",
+			"description": "We provide full website design and development services, including UX design and ecommerce. Our team can set up CMS systems, including HubSpot, WordPress, Drupal and more.  ",
+			"image": "ecommerce.png"
+		},
+		{
+			"title": "Market Analysis",
+			"description": "UP starts all major marketing, branding, advertising and creative service projects with a thorough briefing process and market research. This phase might include customer research or a START ME UP workshop.  UP LAB also offers in-depth analysis and market insights to help you understand your customers. ",
+			"image": "market.jpg"
+		}
+
+
+	]
+}

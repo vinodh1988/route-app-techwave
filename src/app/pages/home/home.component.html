@@ -1,1 +1,10 @@
-<p>home works!</p>
+
+<div class="alert alert-dark">
+    <h3>Our Services</h3>
+    <p>
+      
+          ABC Limited is a global multi-disciplinary, brand, communications and digital agency. As a full-service agency, our work covers everything from market analysis to brand and identity, advertising and communications, digital, web design and content creation to social media and film. And we offer services across many different geographies and languages.
+    </p>
+</div>
+
+<app-serviceitem *ngFor="let x of services" [service]="x"></app-serviceitem>
