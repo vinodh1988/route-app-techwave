@@ -1,0 +1,38 @@
+.formbox{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    float: left;
+    width: 450px;
+    margin: 5px;
+    margin-right: 50px;
+}
+
+.formbox h5{
+    margin: 5px;
+}
+
+.formbox input[type="text"],.formbox input[type="email"]{
+    border: 2px solid white;
+    width: 400px;
+    margin: 10px;
+    height: 30px;
+    padding: 10px;
+}
+textarea{
+    width: 400px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+#form{
+    margin-top: 30px;
+    padding: 50px;
+    background-color: rgb(53, 51, 51);
+    overflow: hidden;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    color: darkred;
+}

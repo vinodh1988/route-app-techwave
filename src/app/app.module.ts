@@ -10,6 +10,9 @@ import { MenubarComponent } from './common/menubar/menubar.component';
 import { AddressComponent } from './pages/contact/address/address.component';
 import { ServiceitemComponent } from './pages/home/serviceitem/serviceitem.component';
 import { DetailsComponent } from './pages/home/details/details.component';
+import { FormComponent } from './pages/home/form/form.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -20,12 +23,14 @@ import { DetailsComponent } from './pages/home/details/details.component';
     MenubarComponent,
     AddressComponent,
     ServiceitemComponent,
-    DetailsComponent
+    DetailsComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
